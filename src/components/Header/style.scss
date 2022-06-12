@@ -1,0 +1,29 @@
+@use '../../styles/vars' as v;
+.header{
+  background-color: v.$color-primary;
+  color: v.$color-light;
+  padding: 3rem;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  &__title{
+    font-size: 2rem;
+    font-weight: v.$font-bold;
+    margin-bottom: 1rem;
+  }
+  &__input{
+    background-color: v.$color-primary;
+    color: v.$color-light;
+    font-weight: v.$font-light;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid v.$color-light;
+    width: 3rem;
+  }
+  &__base{
+    font-weight: v.$font-light;
+    display: inline-block;
+  }
+
+}

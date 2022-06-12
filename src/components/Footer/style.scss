@@ -1,0 +1,17 @@
+@use '../../styles/vars' as v;
+.footer{
+  background-color: v.$color-primary;
+  color: v.$color-light;
+  padding: 3rem;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  &__value{
+    margin-bottom: 1rem;
+    font-weight: v.$font-bold;
+    font-size: 1.5rem;
+  }
+  &__currency{
+    font-weight: v.$font-light;
+  }
+}

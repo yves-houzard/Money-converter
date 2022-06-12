@@ -1,0 +1,46 @@
+@use '../../styles/vars' as v;
+.currencies{
+  width: 100%;
+  background-color: v.$color-light;
+  color: v.$color-primary;
+  flex: 1;
+  min-height: 350px;
+  max-height: 350px;
+  overflow-y: scroll;
+  &__input{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    color: v.$color-alt;
+    &::placeholder{
+      color: v.$color-alt;
+      font-weight: bold;
+    }
+  }
+  &__item{
+    padding: 1rem;
+    border-top: 1px solid v.$color-alt;
+    transition: background-color .3s;
+    &:hover{
+      transition: background-color .3s;
+      cursor: pointer;
+      background-color: v.$color-alt;
+    }
+  }
+}
+
+div.currencies{
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #28A5F7; 
+    border: 1px solid v.$color-light;
+    border-radius: 10px;
+    
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #3C5680 ; 
+  }
+}
